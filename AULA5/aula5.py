@@ -63,12 +63,66 @@ meunome = "Elis"
 for i in meunome:
     print(i)
 
+for i in range (-10):
+    print (i)
+
+for i in range(1,10,2):
+    print (i)
+    
+for i in range(1,102,-2):
+    print (i)
+
+#while
+somador = int(input("Registro:"))
+controle = 0
+
+while controle <= 30:   #quando ultrapassa essa consição, ele não lê os comandos abaixo identados.
+    controle=controle+somador
+    somador = int(input("Registro:"))
+
+print("Oficina Lotada!")
+
+#FOR
+for i in range(5):
+    try:
+        print(f"Número {1 + 1} de 5:")
+        num = float(input("Digite um número:"))
+
+        dobro = num * 2
+        triplo = num * 3
+        quadruplo = num * 4
+
+        print(f"Resultado: Dobro={dobro}, Triplo={triplo}, Quadruplo={quadruplo}/n") 
+
+    except ValueError:
+        print("Entrada Inválida. Tente novamente.")
+        num = float(input("Digite um número: "))
+
+acertou = 0
+while acertou<5:
+    print(f"Número{acertou+1} de 5.")
+    num = float(input("Digite um número:"))
+
+    drobro=num*2
+    triplo=num*3
+    quadruplo=num*4
+
+    print(f"Resultado: Dobro={dobro}, Triplo={triplo}, Quadruplo={quadruplo}\n")
+    acertou+=1
+
+    
+# DO WHILE
+
+contador = 0
+limite = 5
+
+while True
+    if contador >= limite:
+        break
+
+    try:
+        print(f"Número {contador} + 1 de {limite}:")
+        
 
 
 
-
-
-
-
-
-#exemplo 3 com match case

@@ -1,0 +1,3 @@
+# Ordenação de três números
+#criar variável num 1... , identificar os três com if else... o prmeiro é maior que o segundo...
+#comparar todos entre eles.
