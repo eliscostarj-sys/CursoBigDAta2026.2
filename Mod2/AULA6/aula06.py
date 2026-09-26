@@ -3,7 +3,27 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
+precos_array = np.genfromtxt('C:\\Users\\costa.elisangela\\Documents\\CursoBigData2026.2\\Mod2\\AULA6\\vendas_produtos.csv', delimiter=',', skip_header=1, dtype=None, encoding='utf-8', usecols=3)
+df_produtos = pd.read_csv('C:\\Users\\costa.elisangela\\Documents\\CursoBigData2026.2\\Mod2\\AULA6\\vendas_produtos.csv')
+print(precos_array)
+print(type(precos_array))
+
 ## Continuando exatamente de onde paramos na aula passada (histograma), vamos calcular os quartis e verificar se a média está dentro da faixa interquartil (entre Q1 e Q3).
+
+# Calcule a média:
+media = np.mean(precos_array)
+print(f"Média dos preços: R$ {media:.2f}")
+
+
+# Obtenha a mediana:
+mediana = np.median(precos_array)
+print(f"Mediana dos preços: R$ {mediana:.2f}")
+
+
+# Calcule a distância entre a média e a mediana:
+distancia = (media - mediana) / mediana
+print(f"Distância entre a média e a mediana: {distancia * 100:.2f}%")
 
 q1 = np.percentile(precos_array, 25)
 q2 = np.percentile(precos_array, 50)
